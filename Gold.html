@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>Gold</title>
+    <style>
+        .card:hover{
+            box-shadow: 0px 8px 9px gray;
+            transform: scale(1.01);
+        }
+        .f3{
+        
+        color:blue;
+        padding-left: 30%;
+       }
+       .f2{
+        text-decoration: none;
+        color: black;
+       }
+       hr{
+        border-bottom: 2px solid black;
+       }
+       .f1{
+        text-decoration: none;
+        font-size: x-large;
+        color:blue;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+       }
+
+         /* Default styles (you might already have Bootstrap's default styles) */
+.carousel-item img {
+  height: 400px; /* Your initial height */
+ 
+  width: 100%;
+}
+
+/* Media query for screens smaller than 992px (typical for tablets) */
+@media (max-width: 991.98px) {
+  .carousel-item img {
+    height: 300px; /* Reduce height for tablets */
+  }
+}
+
+/* Media query for screens smaller than 768px (typical for smaller tablets and larger phones) */
+@media (max-width: 767.98px) {
+  .carousel-item img {
+    height: 250px; /* Further reduce height for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 576px (typical for smaller phones) */
+@media (max-width: 575.98px) {
+  .carousel-item img {
+    height: 200px; /* Even smaller height for very small screens */
+    width: 100%;
+  }
+}
+
+          /* Media query for tablets (portrait mode) */
+@media (max-width: 768px) {
+  .flex-container {
+    display: grid; /* Switch to a grid layout for better vertical stacking */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Create columns that adjust based on content width */
+    
+  }
+
+  .flex-container > center {
+    display: contents; /* Remove the center element's layout impact */
+  }
+
+  .flex-container > center > div {
+    padding: 20px;
+    margin-top: 0; /* Reset top margin */
+    margin-left: 0 !important; /* Reset left margins */
+    
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .flex-container {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+    font-size: large;
+  }
+
+  .flex-container > center > div {
+    padding: 15px;
+    font-size: x-large;
+  }
+}
+    </style>
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#">Jewellery Park</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <center>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item"  >
+              <a class="nav-link active" aria-current="page" href="index.html"> <b> <img src="./icon/icons8-home-24.png" alt="" width="15px" height="15px">Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="About.html"><b> <img src="./icon/icons8-about-us-30.png" alt="" width="17px" height="17px">About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html"><b> <img src="./icon/icons8-jewelry-24.png" alt=""  width="17px" height="17px">Services</b></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="contact.html"><b> <img src="./icon/icons8-contact-us-24.png" alt=""  width="17px" height="17px">Contact Us</b></a>
+            </li>        
+          </ul>
+      
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </center>
+      </div>
+    </div>
+  </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/g7.jpg" class="d-block w-100" alt="..." height="400px" >
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <center> 
+      <!-- <div style="float: inline-start; padding: 50px; text-align: center; "></div>  -->
+      <!-- <div style="float: inline-start; padding: 50px; text-align: center; "></div> -->
+      <div style="float: inline-start; padding: 50px; text-align: center; "></div>
+      <div style="float: inline-start; padding: 50px;margin-left: 30px; "><img src="./images/go.webp" alt="" width="120px" height="120px" style="border-radius: 120px; "> <br> <a class="f1" href="">Chain</a></div> 
+      <div style="float: inline-start; padding: 50px;margin-left: 30px; "><img src="./images/go1.jpg" alt="" width="120px" height="120px"style="border-radius: 120px; "> <br><a class="f1" href="">Haram</a></div>
+      <div style="float: inline-start; padding: 50px;margin-left: 30px; " ><img src="./images/go2.jpg" alt="" width="120px" height="120px"style="border-radius: 100px;"><br><a class="f1" href="">Ring</a></div>
+      <div style="float: inline-start; padding: 50px;margin-left: 30px; "><img src="./images/go3.webp" alt="" width="120px" height="120px"style="border-radius: 100px; "><br><a class="f1" href="">Bracelet</a></div>
+    </center>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="float: inline-start;">
+        <div class="col">
+          <div class="card" style="width: 18rem; margin: 45px;">
+            <img src="./images/ne2.jpg" class="card-img-top" alt="..."  height="280px">
+            <div class="card-body">
+              <h5 class="card-title"  style="margin-left: 30%;">Necklace</h5>
+              <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p> -->
+              <h5 class="f3"><img src="./icon/icons8-rupee-24.png" alt="">Rs.60000</h5>
+              <a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                style="margin-left: 10px;"
+                ><img src="./icon/icons8-add-to-cart-64.png" alt="" width="17px" height="17px">Add to cart</a>
+                <a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                style="width: 115px;"
+                ><img src="./icon/icons8-buy-now-64.png" alt="" width="17px" height="17px">Buy Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"  style="width: 18rem; margin: 45px;">
+            <img src="./images/g6.jpg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title"  style="margin-left: 35%;">Bangle</h5>
+             <h5 class="f3"><img src="./icon/icons8-rupee-24.png" alt="">Rs.65000</h5>
+              <a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                style="margin-left: 10px;"
+                ><img src="./icon/icons8-add-to-cart-64.png" alt="" width="17px" height="17px">Add to cart</a>
+                <a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                style="width: 115px;"
+                ><img src="./icon/icons8-buy-now-64.png" alt="" width="17px" height="17px">Buy Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; margin: 45px;">
+            <img src="./images/g9.jpg" class="card-img-top" alt="..." height="280px">
+            <div class="card-body">
+              <h5 class="card-title" style="margin-left: 30%;">Thali Chain</h5>
+             <h5 class="f3"><img src="./icon/icons8-rupee-24.png" alt="">Rs.35000</h5>
+              <a
+              name=""
+              id=""
+              class="btn btn-primary"
+              href="#"
+              role="button"
+              style="margin-left: 10px;"
+              ><img src="./icon/icons8-add-to-cart-64.png" alt="" width="17px" height="17px">Add to cart</a>
+              <a
+              name=""
+              id=""
+              class="btn btn-primary"
+              href="#"
+              role="button"
+              style="width: 115px;"
+              ><img src="./icon/icons8-buy-now-64.png" alt="" width="17px" height="17px">Buy Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class=" text-black py-4 " style="background-color: whitesmoke; float: inline-start; width: 100%;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 style="color: blue;">About Us</h5>
+              <p>Jewelry is a decorative item worn to adorn the body or clothes. It can be made from a variety of materials, including precious metals, gemstones, shells, and beads. </p>
+            </div>
+            <div class="col-md-4" style="padding-left: 7%;">
+              <h5  style="color: blue;">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a class="f2" href="index.html" class="text-black">Home</a></li>
+                <li><a class="f2" href="About.html" class="text-black">About</a></li>
+                <li><a class="f2" href="service.html" class="text-black">Services</a></li>
+                <li><a class="f2" href="contact.html" class="text-black">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5  style="color: blue;">Contact Us</h5>
+              <p>Email: info@example.com</p>
+              <p>Phone: +123 456 7890</p>
+              <img src="./icon/icons8-facebook-50.png" alt="">
+              <img src="./icon/icons8-whatsapp-50.png" alt="">
+              <img src="./icon/icons8-twitter-50.png" alt="">
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

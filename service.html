@@ -1,0 +1,198 @@
+ <html>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jewelry Service Form</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   .card:hover{
+            box-shadow: 0px 8px 9px grey;
+            transform: scale(1.01);
+        }
+   .f2{
+        text-decoration: none;
+        color: black;
+       }
+      
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#">Jewellery Park</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <center>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item"  >
+              <a class="nav-link active" aria-current="page" href="index.html"> <b>  <img src="./icon/icons8-home-24.png" alt="" width="15px" height="15px">Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="About.html"><b> <img src="./icon/icons8-about-us-30.png" alt="" width="17px" height="17px">About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html"><b> <img src="./icon/icons8-jewelry-24.png" alt="" width="17px" height="17px">Services</b></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="contact.html"><b>  <img src="./icon/icons8-contact-us-24.png" alt="" width="17px" height="17px">Contact Us</b></a>
+            </li>        
+          </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </center>
+      </div>
+    </div>
+  </nav>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4" style="color: blue;">Jewellery Services</h2>
+        <div class="row">
+            <!-- Service Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; margin: 25px;">
+                    <img src="./images/se1.jpg" class="card-img-top" alt="Service Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Jewellery Design</h5>
+                        <p class="card-text">Create personalized and one-of-a-kind pieces tailored to your preferences.</p>
+                        <a href="#" class="btn btn-primary">Learn More </a>   <button  class="btn btn-primary">Rs.3000</button>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; margin: 25px;">
+                    <img src="./images/se2.jpg" class="card-img-top" alt="Service Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Jewellery Repair</h5>
+                        <p class="card-text">Expert repair services to restore the beauty and function of your jewelry.</p><br>
+                        <a href="#" class="btn btn-primary">Learn More</a> <button  class="btn btn-primary">Rs.5000</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem; margin: 25px;">
+                    <img src="./images/se3.jpg" class="card-img-top" alt="Service Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Jewellery Cleaning</h5>
+                        <p class="card-text">Ensure your pieces sparkle like new with our professional cleaning services.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a> <button  class="btn btn-primary">Rs.7000</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container mt-5">
+        <h3 class="text-center mb-4">Book a Service</h3>
+        <table>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select class="form-control" id="service">
+                    <option>Custom Jewelry Design</option>
+                    <option>Jewelry Repair</option>
+                    <option>Jewelry Cleaning</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </table>
+    </div> -->
+    
+
+
+ 
+  <div class="container mt-5">
+    <h2 class="text-center">Jewellery Service Request Form</h2>
+    <form action="submit_form.php" method="POST">
+      <div class="row">
+        <!-- Customer Information -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+          </div>
+        </div>
+
+        <!-- Service Information -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="service_type" class="form-label">Service Type</label>
+            <select class="form-select" id="service_type" name="service_type" required>
+              <option value="repair">Repair</option>
+              <option value="custom_design">Custom Design</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="resizing">Resizing</option>
+              <option value="restoration">Restoration</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Service Description</label>
+            <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="appointment_date" class="form-label">Preferred Appointment Date</label>
+        <input type="date" class="form-control" id="appointment_date" name="appointment_date" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+
+  <footer class=" text-black py-4 " style="background-color: whitesmoke;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 style="color: blue;">About Us</h5>
+          <p>Jewelry is a decorative item worn to adorn the body or clothes. It can be made from a variety of materials, including precious metals, gemstones, shells, and beads. </p>
+        </div>
+        <div class="col-md-4" style="padding-left: 7%;">
+          <h5  style="color: blue;">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="f2" href="index.html" class="text-black">Home</a></li>
+            <li><a class="f2" href="About.html" class="text-black">About</a></li>
+            <li><a class="f2" href="service.html" class="text-black">Services</a></li>
+            <li><a class="f2" href="contact.html" class="text-black">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5  style="color: blue;">Contact Us</h5>
+          <p>Email: info@example.com</p>
+          <p>Phone: +123 456 7890</p>
+          <img src="./icon/icons8-facebook-50.png" alt="">
+          <img src="./icon/icons8-whatsapp-50.png" alt="">
+          <img src="./icon/icons8-twitter-50.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
